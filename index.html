@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SCORCHED</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="title">MODERN SCORCHED</div>
+
+<div id="canvas-wrapper">
+  <canvas id="gameCanvas" width="900" height="440"></canvas>
+  <div id="scanlines"></div>
+</div>
+
+<div id="ui">
+  <div id="p1-info" class="player-info active">
+    P1 &mdash; HP: <span id="hp1">100</span>
+  </div>
+
+  <div id="controls">
+    <label>ANG</label>
+    <input type="range" id="angle" min="1" max="179" value="55">
+    <span class="val-label" id="angleVal">55°</span>
+
+    <label>PWR</label>
+    <input type="range" id="power" min="10" max="100" value="55">
+    <span class="val-label" id="powerVal">55</span>
+
+    <button id="fireBtn">FIRE</button>
+    <button id="resetBtn">RESET</button>
+  </div>
+
+  <div id="p2-info" class="player-info inactive">
+    P2 &mdash; HP: <span id="hp2">100</span>
+  </div>
+</div>
+
+<div id="message">PLAYER 1 — AIM AND FIRE</div>
+<div id="message">Inspiration from http://www.scorch2000.com/web/  a game i used to play as a child</div>
+
+<script src="script.js"></script>
+</body>
+</html>
